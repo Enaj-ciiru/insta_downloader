@@ -63,17 +63,17 @@ HEIGHT = 500
 
 WIDTH = 600
 
-FONT = font.Font(family = "Times New Roman", size = "18", weight = "bold")
+FONT = font.Font(family = "Cambria", size = "16", weight = "bold")
 
 (Canvas(root, height= HEIGHT, width=WIDTH)).pack()
 
 
-frame = Frame(root, bg="white")
+frame = Frame(root, bg="pink")
 
 frame.place(relwidth = 1, relheight = 1)
 
 
-background_image = ImageTk.PhotoImage(Image.open(r" "))  # image path will be given here
+background_image = ImageTk.PhotoImage(Image.open(r"C:\Users\ADMIN\Downloads\imagereel.jpg"))  # image path will be given here
 
 background_label = Label(frame, image = background_image)
 
@@ -90,7 +90,7 @@ entry = Entry(frame, font = FONT, fg = "#fbad50")
 entry.place(relx=0.48, rely=0.35, relwidth= 0.4, relheight= 0.05)
 
 
-button1  =  Button(root, text = "Download", font = FONT, bg="pink", fg="black", activeforeground = "pink", activebackground = "black",
+button1  =  Button(root, text = "Download", font = FONT, bg="white", fg="black", activeforeground = "pink", activebackground = "black",
 
                    command = lambda:download(entry.get()))  #function for download
 
